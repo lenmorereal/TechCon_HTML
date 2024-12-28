@@ -5,22 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Schedule</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2em 0;
     }
-    header, footer {
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
       background-color: #f4f4f4;
-      text-align: center;
-      padding: 1em 0;
+      font-weight: bold;
     }
-    footer {
-      font-size: 0.9em;
-      color: #555;
-    }
-    main {
-      padding: 2em;
+    caption {
+      font-weight: bold;
+      margin-bottom: 1em;
     }
   </style>
 </head>
@@ -36,8 +37,34 @@
     </nav>
   </header>
   <main>
-    <h2>My Schedule</h2>
-    <p>Placeholder content for the schedule goes here.</p>
+    <h2>Schedule of Events</h2>
+    <table>
+      <caption>Detailed Schedule of Events for TechCon 2024</caption>
+      <thead>
+        <tr>
+          <th scope="col">Time</th>
+          <th scope="col">Event</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">9:00 AM</th>
+          <td>Opening Keynote</td>
+          <td>Main Hall</td>
+        </tr>
+        <tr>
+          <th scope="row">10:30 AM</th>
+          <td>Workshop: AI Innovations</td>
+          <td>Room 202</td>
+        </tr>
+        <tr>
+          <th scope="row">1:00 PM</th>
+          <td>Networking Lunch</td>
+          <td>Cafeteria</td>
+        </tr>
+      </tbody>
+    </table>
   </main>
   <footer>
     <p>© 2024 Your Name. All rights reserved.</p>
